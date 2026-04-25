@@ -3,7 +3,7 @@ title: "What Is Polarity Therapy?"
 meta_title: "What Is Polarity Therapy? A Plain-Language Introduction — Golden Crane"
 description: "A short, grounded introduction to polarity therapy: what it is, what a session feels like, and why it can be surprisingly profound."
 date: 2026-04-18T10:00:00Z
-image: "/images/card-back.png"
+image: "/images/crane.png"
 categories: ["Modalities"]
 author: "Aaron Martz"
 tags: ["polarity therapy", "energy work"]

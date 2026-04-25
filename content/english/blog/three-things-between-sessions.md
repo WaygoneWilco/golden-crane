@@ -3,7 +3,7 @@ title: "Three Small Things to Do Between Sessions"
 meta_title: "Three Small Things to Do Between Massage Sessions — Golden Crane"
 description: "Three simple, free, and quietly powerful habits that extend the benefit of bodywork between visits."
 date: 2026-04-11T10:00:00Z
-image: "/images/card-back.png"
+image: "/images/crane.png"
 categories: ["Self-Care"]
 author: "Aaron Martz"
 tags: ["self-care", "between sessions"]

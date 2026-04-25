@@ -3,7 +3,7 @@
 banner:
   title: "Golden Crane Massage Therapy & Energy Work"
   content: "Relaxation massage, myofascial release, polarity therapy, and foot reflexology with Aaron Martz, LMT — in the studio in Ann Arbor, or in the comfort of your home."
-  image: "/images/card-front.png"
+  image: "/images/crane.png"
   button:
     enable: true
     label: "Book a Session"
@@ -12,7 +12,7 @@ banner:
 # Features
 features:
   - title: "A Practice Built Around You"
-    image: "/images/card-back.png"
+    image: "/images/crane.png"
     content: "Every body carries its own story. Sessions at Golden Crane are tailored to where you are right now — whether that's deep tension that needs slow, patient work, restless energy that wants to settle, or simply the gift of an hour to yourself."
     bulletpoints:
       - "Quiet, unhurried sessions in a calm Ann Arbor studio"
@@ -25,7 +25,7 @@ features:
       link: "/about/"
 
   - title: "Four Ways to Find Ease"
-    image: "/images/card-front.png"
+    image: "/images/crane.png"
     content: "Each modality offers a different doorway into the same goal — helping you feel more at home in your body."
     bulletpoints:
       - "**Relaxation Massage** — flowing, full-body work to ease everyday stress"
@@ -38,7 +38,7 @@ features:
       link: "/services/"
 
   - title: "A Gentle Delight"
-    image: "/images/card-back.png"
+    image: "/images/crane.png"
     content: "The cranes on our card aren't just decoration. Sandhill cranes mate for life, return to the same wetlands year after year, and move through the world with a quiet, deliberate grace. That's the spirit of this practice — steady, attentive, and a little bit magic."
     bulletpoints:
       - "Sessions begin and end on time, in a warm and welcoming space"

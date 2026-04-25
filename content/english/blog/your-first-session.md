@@ -3,7 +3,7 @@ title: "Your First Session: What to Expect"
 meta_title: "Your First Massage Session: What to Expect — Golden Crane"
 description: "A walkthrough of what happens during a first session at Golden Crane Massage Therapy, from arrival to the conversation afterward."
 date: 2026-04-25T10:00:00Z
-image: "/images/card-back.png"
+image: "/images/crane.png"
 categories: ["Getting Started"]
 author: "Aaron Martz"
 tags: ["first session", "what to expect"]
