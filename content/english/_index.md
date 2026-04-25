@@ -3,7 +3,6 @@
 banner:
   title: "Golden Crane Massage Therapy & Energy Work"
   content: "Relaxation massage, myofascial release, polarity therapy, and foot reflexology with Aaron Martz, LMT — in the studio in Ann Arbor, or in the comfort of your home."
-  image: "/images/crane.png"
   button:
     enable: true
     label: "Book a Session"

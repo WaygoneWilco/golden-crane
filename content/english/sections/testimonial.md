@@ -1,5 +1,5 @@
 ---
-enable: true
+enable: false
 title: "What Clients Say"
 description: "A few notes from people who've spent an hour at Golden Crane."
 
