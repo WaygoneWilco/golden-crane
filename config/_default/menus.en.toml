@@ -8,56 +8,62 @@ weight = 1
 
 [[main]]
 name = "About"
-url = "/about"
+url = "/about/"
 weight = 2
 
 [[main]]
-name = "Elements"
-url = "/elements"
+name = "Services"
+url = "/services/"
 weight = 3
 
 [[main]]
+name = "Gift Certificates"
+url = "/gift-certificates/"
 weight = 4
-name = "Pages"
 
 [[main]]
-parent = "Pages"
+name = "FAQ"
+url = "/faq/"
+weight = 5
+
+[[main]]
 name = "Blog"
-url = "/blog"
+url = "/blog/"
+weight = 6
 
 [[main]]
-parent = "Pages"
 name = "Contact"
-url = "/contact"
-
-[[main]]
-parent = "Pages"
-name = "Authors"
-url = "/authors"
-
-[[main]]
-parent = "Pages"
-name = "Categories"
-url = "/categories"
-
-[[main]]
-parent = "Pages"
-name = "404 Page"
-url = "/404"
+url = "/contact/"
+weight = 7
 
 
 # footer menu
 [[footer]]
 name = "About"
-url = "/about"
+url = "/about/"
 weight = 1
 
 [[footer]]
-name = "Elements"
-url = "/elements"
+name = "Services"
+url = "/services/"
 weight = 2
 
 [[footer]]
-name = "Privacy Policy"
-url = "/privacy-policy"
+name = "Gift Certificates"
+url = "/gift-certificates/"
 weight = 3
+
+[[footer]]
+name = "FAQ"
+url = "/faq/"
+weight = 4
+
+[[footer]]
+name = "Policies"
+url = "/policies/"
+weight = 5
+
+[[footer]]
+name = "Contact"
+url = "/contact/"
+weight = 6

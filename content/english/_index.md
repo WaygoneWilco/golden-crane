@@ -1,53 +1,51 @@
 ---
 # Banner
 banner:
-  title: "The Ultimate Starter Template You Need To Start Your Hugo Project"
-  content: "Hugoplate is a free starter template built with Hugo and TailwindCSS, providing everything you need to jump-start your Hugo project and save valuable time."
-  image: "/images/banner.png"
+  title: "Golden Crane Massage Therapy & Energy Work"
+  content: "Relaxation massage, myofascial release, polarity therapy, and foot reflexology with Aaron Martz, LMT — in the studio in Ann Arbor, or in the comfort of your home."
+  image: "/images/card-front.png"
   button:
     enable: true
-    label: "Fork Deploy and Edit Online 🚀"
-    link: "https://app.sitepins.com/new/clone?name=Hugoplate&repository=https://github.com/zeon-studio/hugoplate?aff=hugoplate"
+    label: "Book a Session"
+    link: "/contact/"
 
 # Features
 features:
-  - title: "What's Included in Hugoplate"
-    image: "/images/service-1.png"
-    content: "Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What's Included in Hugoplate"
+  - title: "A Practice Built Around You"
+    image: "/images/card-back.png"
+    content: "Every body carries its own story. Sessions at Golden Crane are tailored to where you are right now — whether that's deep tension that needs slow, patient work, restless energy that wants to settle, or simply the gift of an hour to yourself."
     bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Hugo and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
-    button:
-      enable: false
-      label: "Get Started Now"
-      link: "#"
-
-  - title: "Discover the Key Features Of Hugo"
-    image: "/images/service-2.png"
-    content: "Hugo is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
-    bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
+      - "Quiet, unhurried sessions in a calm Ann Arbor studio"
+      - "Mobile visits to your home in Ann Arbor, Ypsilanti, Belleville, Saline, Milan, and Dexter"
+      - "Four complementary modalities, blended to suit your needs"
+      - "Licensed Massage Therapist with training in energy and bodywork traditions"
     button:
       enable: true
-      label: "Get Started Now"
-      link: "https://github.com/zeon-studio/hugoplate"
+      label: "Meet Aaron"
+      link: "/about/"
 
-  - title: "The Top Reasons to Choose Hugo for Your Hugo Project"
-    image: "/images/service-3.png"
-    content: "With Hugo, you can build modern and content-focused websites without sacrificing performance or ease of use."
+  - title: "Four Ways to Find Ease"
+    image: "/images/card-front.png"
+    content: "Each modality offers a different doorway into the same goal — helping you feel more at home in your body."
     bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Hugo a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+      - "**Relaxation Massage** — flowing, full-body work to ease everyday stress"
+      - "**Myofascial Release** — slow, sustained pressure to unwind chronic patterns"
+      - "**Polarity Therapy** — gentle energy balancing rooted in classical wisdom"
+      - "**Foot Reflexology** — focused work on the feet that ripples through the whole body"
     button:
-      enable: false
-      label: ""
-      link: ""
+      enable: true
+      label: "See Services & Rates"
+      link: "/services/"
+
+  - title: "A Gentle Delight"
+    image: "/images/card-back.png"
+    content: "The cranes on our card aren't just decoration. Sandhill cranes mate for life, return to the same wetlands year after year, and move through the world with a quiet, deliberate grace. That's the spirit of this practice — steady, attentive, and a little bit magic."
+    bulletpoints:
+      - "Sessions begin and end on time, in a warm and welcoming space"
+      - "First-time clients receive a brief consultation to shape the session"
+      - "Gift certificates available for any service"
+    button:
+      enable: true
+      label: "Read Common Questions"
+      link: "/faq/"
 ---
