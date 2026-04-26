@@ -194,10 +194,13 @@ a:hover {
   font-style: italic;
   font-weight: 400;
   color: var(--gc-ink-soft);
-  font-size: clamp(1rem, 1.4vw, 1.25rem);
-  line-height: 1.55;
+  font-size: clamp(1.1875rem, 1.4vw, 1.25rem);
+  line-height: 1.6;
   word-wrap: break-word;
   overflow-wrap: break-word;
+}
+@media (min-width: 1024px) {
+  .gc-subtitle { font-size: clamp(1.05rem, 1.4vw, 1.25rem); line-height: 1.55; }
 }
 
 /* Body essay, narrow column */
