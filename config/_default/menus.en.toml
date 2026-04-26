@@ -1,6 +1,6 @@
 ############# English navigation ##############
 
-# main menu
+# main menu — kept lean for luxury feel
 [[main]]
 name = "Home"
 url = "/"
@@ -17,8 +17,8 @@ url = "/services/"
 weight = 3
 
 [[main]]
-name = "Gift Certificates"
-url = "/gift-certificates/"
+name = "Testimonials"
+url = "/testimonials/"
 weight = 4
 
 [[main]]
@@ -27,17 +27,12 @@ url = "/faq/"
 weight = 5
 
 [[main]]
-name = "Blog"
-url = "/blog/"
-weight = 6
-
-[[main]]
 name = "Contact"
 url = "/contact/"
-weight = 7
+weight = 6
 
 
-# footer menu
+# footer menu — full set lives here
 [[footer]]
 name = "About"
 url = "/about/"
@@ -54,16 +49,26 @@ url = "/gift-certificates/"
 weight = 3
 
 [[footer]]
+name = "Testimonials"
+url = "/testimonials/"
+weight = 4
+
+[[footer]]
 name = "FAQ"
 url = "/faq/"
-weight = 4
+weight = 5
+
+[[footer]]
+name = "Blog"
+url = "/blog/"
+weight = 6
 
 [[footer]]
 name = "Policies"
 url = "/policies/"
-weight = 5
+weight = 7
 
 [[footer]]
 name = "Contact"
 url = "/contact/"
-weight = 6
+weight = 8

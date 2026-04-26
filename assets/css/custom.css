@@ -794,6 +794,86 @@ body > * { position: relative; z-index: 1; }
     0 24px 60px -36px rgba(31, 20, 8, 0.18);
 }
 
+/* ---------- Testimonial list page -------------------------------------- */
+
+.gc-testimonial-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.gc-testimonial-card {
+  position: relative;
+  padding: 0 0 0 2.5rem;
+  border-left: 1px solid var(--gc-rule);
+}
+.gc-testimonial-card .gc-pullquote::before,
+.gc-testimonial-card .gc-pullquote::after {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .gc-testimonial-card {
+    padding-left: 1.25rem;
+  }
+}
+
+/* ---------- Testimonial carousel --------------------------------------- */
+
+.gc-testimonials .gc-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  margin: 0 -1rem;
+  padding: 0 1rem;
+}
+.gc-testimonials .gc-carousel::-webkit-scrollbar {
+  display: none;
+}
+.gc-carousel-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  min-height: 14rem;
+}
+
+.gc-carousel-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.875rem;
+  margin-top: 2.5rem;
+}
+.gc-carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid var(--gc-gold);
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  transition: background 250ms ease, transform 250ms ease;
+  appearance: none;
+  outline-offset: 4px;
+}
+.gc-carousel-dot:hover {
+  background: var(--gc-gold);
+}
+.gc-carousel-dot.is-active {
+  background: var(--gc-gold);
+  transform: scale(1.25);
+}
+.gc-carousel-dot:focus-visible {
+  outline: 1px solid var(--gc-ink);
+}
+
 /* ---------- Practitioner signature ------------------------------------- */
 
 .gc-signature {

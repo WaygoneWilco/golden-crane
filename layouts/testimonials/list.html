@@ -1,0 +1,46 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+  {{ with .Content }}
+    <section class="gc-section--tight" style="padding-top: 0; padding-bottom: clamp(2rem, 4vw, 3rem);">
+      <div class="gc-container--narrow">
+        <div class="content text-center" style="max-width: 38rem; margin: 0 auto;">
+          {{ . }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  {{ with site.GetPage "sections/testimonial" }}
+    <section class="gc-section" style="padding-top: clamp(2rem, 4vw, 3rem);">
+      <div class="gc-container--narrow">
+        <div class="gc-testimonial-list">
+          {{ range $i, $t := .Params.testimonials }}
+            <article class="gc-testimonial-card">
+              <blockquote class="gc-pullquote" style="font-size: clamp(1.35rem, 2.4vw, 1.875rem); text-align: left;">
+                {{ $t.content | markdownify }}
+              </blockquote>
+              <p class="gc-pullquote-attr" style="text-align: left; margin-top: 1.5rem;">
+                {{ $t.name }} &nbsp;·&nbsp; {{ $t.designation }}
+              </p>
+            </article>
+          {{ end }}
+        </div>
+
+        <div class="gc-chapter-rule" style="margin-top: 5rem;">
+          <span class="gc-ornament-mark" aria-hidden="true">
+            <svg viewBox="0 0 36 18" fill="currentColor">
+              <path d="M18 0 L 24 9 L 18 18 L 12 9 Z"/>
+              <circle cx="3" cy="9" r="1.6" opacity="0.7"/>
+              <circle cx="33" cy="9" r="1.6" opacity="0.7"/>
+            </svg>
+          </span>
+        </div>
+
+        <p class="text-center" style="margin-top: 2rem;">
+          <a href="/contact/" class="gc-textlink">Get in touch</a>
+        </p>
+      </div>
+    </section>
+  {{ end }}
+{{ end }}

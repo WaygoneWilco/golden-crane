@@ -117,15 +117,37 @@
     </div>
   </section>
 
-  {{/* ---------- PULL QUOTE ---------- */}}
-  <section class="gc-section gc-section--sand">
-    <div class="gc-container">
-      <blockquote class="gc-pullquote">
-        Aaron has a way of meeting your body exactly where it is. I came in tense and unsure what I needed; I left feeling like I'd been listened to without saying a word.
-      </blockquote>
-      <p class="gc-pullquote-attr">A client &nbsp;·&nbsp; Ann Arbor</p>
-    </div>
-  </section>
+  {{/* ---------- TESTIMONIAL CAROUSEL ---------- */}}
+  {{ with site.GetPage "sections/testimonial" }}
+    {{ if .Params.enable }}
+      <section class="gc-section gc-section--sand gc-testimonials" data-gc-carousel>
+        <div class="gc-container">
+          <div class="text-center mb-10">
+            <p class="gc-eyebrow">{{ .Title }}</p>
+          </div>
+
+          <div class="gc-carousel" data-carousel-track>
+            {{ range $i, $t := .Params.testimonials }}
+              <article class="gc-carousel-slide" data-carousel-slide id="t-{{ $i }}">
+                <blockquote class="gc-pullquote">{{ $t.content | markdownify }}</blockquote>
+                <p class="gc-pullquote-attr">{{ $t.name }} &nbsp;·&nbsp; {{ $t.designation }}</p>
+              </article>
+            {{ end }}
+          </div>
+
+          <div class="gc-carousel-nav" role="tablist" aria-label="Testimonial selection">
+            {{ range $i, $t := .Params.testimonials }}
+              <button type="button" class="gc-carousel-dot{{ if eq $i 0 }} is-active{{ end }}" data-carousel-go="{{ $i }}" role="tab" aria-label="Show testimonial {{ add $i 1 }}" aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}"></button>
+            {{ end }}
+          </div>
+
+          <p class="text-center mt-10">
+            <a href="/testimonials/" class="gc-textlink">Read more notes</a>
+          </p>
+        </div>
+      </section>
+    {{ end }}
+  {{ end }}
 
   {{/* ---------- CLOSING / BOOKING ---------- */}}
   <section class="gc-section">
@@ -165,4 +187,92 @@
     <span class="gc-mobile-cta-label">Book a session</span>
     <span class="gc-mobile-cta-sub">aaronmmartz@gmail.com</span>
   </a>
+
+  {{/* ---------- TESTIMONIAL CAROUSEL DRIVER ---------- */}}
+  <script>
+    (function () {
+      const root = document.querySelector('[data-gc-carousel]');
+      if (!root) return;
+      const track = root.querySelector('[data-carousel-track]');
+      const slides = Array.from(root.querySelectorAll('[data-carousel-slide]'));
+      const dots = Array.from(root.querySelectorAll('[data-carousel-go]'));
+      if (!track || slides.length < 2) return;
+
+      let current = 0;
+      let autoTimer = null;
+      const AUTO_MS = 8000;
+
+      function goTo(i, opts) {
+        opts = opts || {};
+        const idx = (i + slides.length) % slides.length;
+        current = idx;
+        const slide = slides[idx];
+        const left = slide.offsetLeft - track.offsetLeft;
+        track.scrollTo({ left: left, behavior: opts.instant ? 'auto' : 'smooth' });
+        dots.forEach(function (d, j) {
+          d.classList.toggle('is-active', j === idx);
+          d.setAttribute('aria-selected', j === idx ? 'true' : 'false');
+        });
+      }
+
+      function scheduleAuto() {
+        if (autoTimer) clearTimeout(autoTimer);
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        autoTimer = setTimeout(function () { goTo(current + 1); }, AUTO_MS);
+      }
+
+      dots.forEach(function (d) {
+        d.addEventListener('click', function () {
+          goTo(parseInt(d.dataset.carouselGo, 10));
+          scheduleAuto();
+        });
+      });
+
+      // Track the user's manual scroll to keep dots in sync
+      let scrollTimer = null;
+      track.addEventListener('scroll', function () {
+        if (scrollTimer) clearTimeout(scrollTimer);
+        scrollTimer = setTimeout(function () {
+          let closest = 0;
+          let minDist = Infinity;
+          const center = track.scrollLeft + track.clientWidth / 2;
+          slides.forEach(function (s, i) {
+            const sCenter = s.offsetLeft + s.clientWidth / 2 - track.offsetLeft;
+            const dist = Math.abs(sCenter - center);
+            if (dist < minDist) { minDist = dist; closest = i; }
+          });
+          if (closest !== current) {
+            current = closest;
+            dots.forEach(function (d, j) {
+              d.classList.toggle('is-active', j === current);
+              d.setAttribute('aria-selected', j === current ? 'true' : 'false');
+            });
+            scheduleAuto();
+          }
+        }, 120);
+      });
+
+      // Pause auto-advance on hover/focus
+      ['mouseenter', 'focusin', 'touchstart'].forEach(function (evt) {
+        root.addEventListener(evt, function () {
+          if (autoTimer) { clearTimeout(autoTimer); autoTimer = null; }
+        });
+      });
+      ['mouseleave', 'focusout'].forEach(function (evt) {
+        root.addEventListener(evt, scheduleAuto);
+      });
+
+      // Pause when tab is hidden
+      document.addEventListener('visibilitychange', function () {
+        if (document.hidden) {
+          if (autoTimer) { clearTimeout(autoTimer); autoTimer = null; }
+        } else {
+          scheduleAuto();
+        }
+      });
+
+      goTo(0, { instant: true });
+      scheduleAuto();
+    })();
+  </script>
 {{ end }}
