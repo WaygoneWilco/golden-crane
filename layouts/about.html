@@ -1,0 +1,23 @@
+{{ define "main" }}
+  <section class="gc-section" style="padding-top: clamp(4rem, 8vw, 6rem); padding-bottom: clamp(2rem, 4vw, 3rem);">
+    <div class="gc-container">
+      <div class="text-center" style="margin-bottom: clamp(2.5rem, 5vw, 4rem);">
+        <p class="gc-eyebrow">Golden Crane</p>
+        <h1 class="gc-display gc-display--lg mt-6 mb-6">{{ .Title }}</h1>
+        <hr class="gc-rule-short">
+      </div>
+
+      {{ with .Params.image }}
+        <figure class="gc-headshot">
+          <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="eager" />
+        </figure>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="gc-section--tight" style="padding-top: 0; padding-bottom: clamp(5rem, 9vw, 7rem);">
+    <div class="gc-container--narrow">
+      <div class="content">{{ .Content }}</div>
+    </div>
+  </section>
+{{ end }}

@@ -432,6 +432,45 @@ a:hover {
   /* centered already by parent flex */
 }
 
+/* ---------- About: headshot ------------------------------------------- */
+
+.gc-headshot {
+  margin: 0 auto;
+  max-width: 360px;
+  position: relative;
+  padding: 1rem;
+  background: var(--gc-paper-warm);
+  box-shadow:
+    0 1px 0 rgba(31, 20, 8, 0.04),
+    0 24px 60px -36px rgba(31, 20, 8, 0.18);
+}
+.gc-headshot::before,
+.gc-headshot::after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 78px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+.gc-headshot::before {
+  top: -2px; left: -2px;
+  background-image: url("/images/ornaments/corner-tl.png");
+  background-position: top left;
+}
+.gc-headshot::after {
+  bottom: -2px; right: -2px;
+  background-image: url("/images/ornaments/corner-br.png");
+  background-position: bottom right;
+}
+.gc-headshot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: saturate(0.95);
+}
+
 /* ---------- Page header (inner pages) ---------------------------------- */
 
 .gc-page-header {
