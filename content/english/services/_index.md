@@ -56,11 +56,29 @@ Focused work on the feet using reflex points that correspond to the rest of the 
 
 ---
 
-## Packages & Add-Ons
+## Packages
 
-- **Three-session package** — *(TODO: pricing)* — for clients who want to make ongoing work part of their month
-- **Reflexology add-on** — add 30 minutes of foot reflexology to any massage for *(TODO)*
-- **Gift certificates** — [available for any service](/gift-certificates/)
+For clients who want to make this work a regular part of their month, prepaid packages offer a small thank-you for your commitment. Packages are studio sessions, redeemable for any modality at the chosen length.
+
+| Length | Single | 3-Pack *(save 5%)* | 6-Pack *(save 10%)* |
+| --- | --- | --- | --- |
+| 60 minutes (any modality) | $100 | $285 | $540 |
+| 90 minutes (any modality) | $135 | $385 | $725 |
+| 120 minutes relaxation | $175 | $500 | $945 |
+| 60 minutes reflexology | $100 | $285 | $540 |
+| 30 minutes reflexology | $60 | $170 | $325 |
+
+Package terms:
+
+- Sessions expire 12 months from the date of purchase.
+- Transferable — you can gift remaining sessions to someone else.
+- Non-refundable, but unused sessions can be applied to a different length at the per-session rate.
+- Studio sessions only. For mobile prepayment, [gift certificates](/gift-certificates/) are available for any individual session.
+
+## Add-Ons & Gift Certificates
+
+- **Reflexology add-on** — add 30 minutes of foot reflexology to any massage for $45.
+- **Gift certificates** — [available for any service](/gift-certificates/).
 
 ## Booking
 
