@@ -752,8 +752,159 @@ a:hover {
   }
 }
 
-/* ---------- Navbar: quieter, more editorial ----------------------------- */
+/* ---------- Navbar: clean editorial header (project override) --------- */
 
+.gc-header {
+  background: var(--gc-paper);
+  border-bottom: 1px solid var(--gc-rule);
+}
+.gc-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0.875rem 1.25rem;
+  gap: 1rem;
+}
+.gc-nav-brand {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+.gc-nav-brand img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 200px;
+  max-height: 56px;
+}
+/* Theme switcher is disabled — only render the light-mode logo */
+.gc-nav-brand img.img-dark { display: none; }
+
+/* Hamburger toggle (checkbox is hidden, label is the visible button) */
+.gc-nav-toggle {
+  display: none;
+}
+.gc-nav-burger {
+  display: none;
+  width: 44px;
+  height: 44px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  margin-left: auto;
+  border-radius: 2px;
+  transition: background 200ms ease;
+  background: transparent;
+}
+.gc-nav-burger:hover { background: rgba(31, 20, 8, 0.04); }
+.gc-burger-line {
+  display: block;
+  width: 24px;
+  height: 1.5px;
+  background: var(--gc-ink);
+  transition: transform 250ms ease, opacity 250ms ease;
+}
+
+/* Menu — desktop default (horizontal) */
+.gc-nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem 1.75rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+.gc-nav-item { margin: 0; }
+.gc-nav-link {
+  display: inline-block;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 500;
+  font-size: 0.78rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gc-ink-soft);
+  text-decoration: none;
+  padding: 0.5rem 0;
+  transition: color 200ms ease;
+}
+.gc-nav-link:hover,
+.gc-nav-link.is-active { color: var(--gc-gold-deep); }
+
+.gc-nav-cta-link {
+  display: inline-block;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 500;
+  font-size: 0.78rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gc-ink);
+  text-decoration: none;
+  padding: 0.4rem 0.2rem;
+  border-bottom: 1px solid var(--gc-gold);
+  transition: color 200ms ease, border-color 200ms ease, letter-spacing 200ms ease;
+}
+.gc-nav-cta-link:hover {
+  color: var(--gc-gold-deep);
+  border-bottom-color: var(--gc-ink);
+  letter-spacing: 0.32em;
+}
+
+/* Mobile: show hamburger, collapse menu */
+@media (max-width: 1023px) {
+  .gc-nav { padding: 0.625rem 1rem; }
+  .gc-nav-brand img { max-width: 160px; }
+  .gc-nav-burger { display: flex; }
+  .gc-nav-menu {
+    order: 99;
+    flex-basis: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 320ms ease;
+    border-top: 0;
+  }
+  .gc-nav-toggle:checked ~ .gc-nav-menu {
+    max-height: 80vh;
+    border-top: 1px solid var(--gc-rule);
+    padding: 0.5rem 0;
+  }
+  .gc-nav-toggle:checked ~ .gc-nav-burger .gc-burger-line:nth-child(1) {
+    transform: translateY(6.5px) rotate(45deg);
+  }
+  .gc-nav-toggle:checked ~ .gc-nav-burger .gc-burger-line:nth-child(2) {
+    opacity: 0;
+  }
+  .gc-nav-toggle:checked ~ .gc-nav-burger .gc-burger-line:nth-child(3) {
+    transform: translateY(-6.5px) rotate(-45deg);
+  }
+  .gc-nav-link, .gc-nav-cta-link {
+    display: block;
+    text-align: center;
+    padding: 0.875rem 1rem;
+    font-size: 0.85rem;
+    border-bottom: 0;
+  }
+  .gc-nav-cta-link {
+    margin: 0.5rem 1rem 0.25rem;
+    border-bottom: 1px solid var(--gc-gold);
+  }
+}
+@media (max-width: 480px) {
+  .gc-nav-brand img { max-width: 140px; }
+}
+
+/* Old Hugoplate header rules (kept for compatibility, mostly inert now) */
 .header {
   background: var(--gc-paper) !important;
   border-bottom: 1px solid var(--gc-rule);
@@ -795,27 +946,8 @@ a:hover {
   letter-spacing: 0.32em !important;
 }
 
-/* On mobile the sticky bottom CTA is the booking entry-point;
-   hide the navbar Book Now and shrink the logo so the hamburger fits. */
-@media (max-width: 1023px) {
-  .header .btn-primary,
-  .header a.btn.btn-primary {
-    display: none !important;
-  }
-  .header .navbar-brand img,
-  .header .navbar-brand picture img {
-    max-width: 150px !important;
-    width: 150px !important;
-    height: auto !important;
-  }
-}
-@media (max-width: 480px) {
-  .header .navbar-brand img,
-  .header .navbar-brand picture img {
-    max-width: 130px !important;
-    width: 130px !important;
-  }
-}
+/* (Mobile menu / hamburger live in the .gc-nav block above, since we now
+    own the entire header partial.) */
 
 /* Hide the search icon — it's noise on a 9-page site */
 .header form[action*="search"],
