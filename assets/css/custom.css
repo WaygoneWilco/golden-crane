@@ -98,13 +98,15 @@ a:hover {
 @media (max-width: 640px) {
   .gc-eyebrow {
     font-size: 0.7rem;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.18em;
+    white-space: normal;
+    word-spacing: 0.2em;
   }
 }
 @media (max-width: 380px) {
   .gc-eyebrow {
-    font-size: 0.62rem;
-    letter-spacing: 0.16em;
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
   }
 }
 
@@ -160,11 +162,17 @@ a:hover {
 }
 
 .gc-display--xl {
-  font-size: clamp(2.25rem, 11vw, 6.5rem);
+  font-size: clamp(2.25rem, 8vw, 6.5rem);
   word-wrap: break-word;
   overflow-wrap: break-word;
   max-width: 100%;
   line-height: 1.05;
+}
+@media (max-width: 480px) {
+  .gc-display--xl { font-size: 2.25rem; }
+}
+@media (max-width: 380px) {
+  .gc-display--xl { font-size: 2rem; }
 }
 .gc-display--lg {
   font-size: clamp(1.625rem, 5vw, 3.5rem);
