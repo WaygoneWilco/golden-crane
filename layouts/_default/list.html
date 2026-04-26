@@ -1,30 +1,22 @@
 {{ define "main" }}
   {{ partial "page-header" . }}
 
-  <section class="section-sm">
-    <div class="container">
-      <div class="row justify-center">
-        <div class="lg:col-10">
-          {{ with .Content }}
-            <div class="content">
-              {{ . }}
-            </div>
-          {{ end }}
-          {{ with .RegularPages }}
-            <ul class="text-center {{ if $.Content }}mt-12{{ end }}">
-              {{ range . }}
-                <li class="m-3">
-                  <a
-                    href="{{ .Permalink }}"
-                    class="text-text-dark dark:text-darkmode-text-dark block text-xl">
-                    {{ .Title }}
-                  </a>
-                </li>
-              {{ end }}
-            </ul>
-          {{ end }}
+  <section class="gc-section--tight" style="padding-top: 0; padding-bottom: clamp(5rem, 9vw, 7rem);">
+    <div class="gc-container--narrow">
+      {{ with .Content }}
+        <div class="content">
+          {{ . }}
         </div>
-      </div>
+      {{ end }}
+      {{ with .RegularPages }}
+        <ul class="text-center {{ if $.Content }}mt-12{{ end }}" style="list-style: none; padding: 0; margin: 3rem 0 0;">
+          {{ range . }}
+            <li class="m-3">
+              <a href="{{ .Permalink }}" class="gc-textlink">{{ .Title }}</a>
+            </li>
+          {{ end }}
+        </ul>
+      {{ end }}
     </div>
   </section>
 {{ end }}

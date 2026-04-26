@@ -618,7 +618,7 @@ a:hover {
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--gc-crane);
-  text-align: left;
+  text-align: center;
   padding: 0.875rem 1rem;
   border-bottom: 1px solid var(--gc-rule);
 }
@@ -628,6 +628,14 @@ a:hover {
   color: var(--gc-ink);
   font-size: 1rem;
   font-style: italic;
+  text-align: center;
+}
+
+/* Packages table is the only one with four columns (Length / Single / 3-Pack / 6-Pack).
+   Left-align its first column since those cells hold a descriptive label, not a number. */
+.content table:has(th:nth-child(4)) th:first-child,
+.content table:has(th:nth-child(4)) td:first-child {
+  text-align: left;
 }
 .content table tr:last-child td { border-bottom: 0; }
 
@@ -962,12 +970,12 @@ a:hover {
 
 /* ---------- Footer ------------------------------------------------------- */
 
-.footer {
+footer {
   background: var(--gc-sand) !important;
   border-top: 1px solid var(--gc-rule);
 }
-.footer .footer-menu a,
-.footer a {
+footer footer-menu a,
+footer a {
   font-family: "Cormorant Garamond", Georgia, serif !important;
   font-weight: 500 !important;
   font-size: 0.78rem !important;
@@ -975,8 +983,22 @@ a:hover {
   text-transform: uppercase !important;
   color: var(--gc-ink-soft) !important;
 }
-.footer .footer-menu a:hover {
+footer footer-menu a:hover {
   color: var(--gc-gold-deep) !important;
+}
+
+/* The "Book Now" item is always the last footer link (weight 9).
+   Treat it like the navbar CTA: ink color, hairline gold rule beneath. */
+footer ul > li:last-child > a {
+  color: var(--gc-ink) !important;
+  border-bottom: 1px solid var(--gc-gold) !important;
+  padding-bottom: 0.35rem;
+  transition: color 200ms ease, border-color 200ms ease, letter-spacing 200ms ease;
+}
+footer ul > li:last-child > a:hover {
+  color: var(--gc-gold-deep) !important;
+  border-bottom-color: var(--gc-ink) !important;
+  letter-spacing: 0.32em !important;
 }
 
 /* ---------- Buttons elsewhere on the site (services, contact pages) ----- */
@@ -1146,6 +1168,31 @@ body > * { position: relative; z-index: 1; }
 }
 .gc-carousel-dot:focus-visible {
   outline: 1px solid var(--gc-ink);
+}
+
+/* ---------- Editorial closing line (essay sign-off) -------------------- */
+
+.content .gc-essay-close,
+.gc-essay-close {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--gc-ink);
+  text-align: center;
+  margin: 3rem auto 0 !important;
+  max-width: 30rem;
+  display: block;
+}
+.gc-essay-close a {
+  color: var(--gc-gold-deep);
+  border-bottom: 1px solid currentColor;
+  transition: color 200ms ease, border-color 200ms ease;
+}
+.gc-essay-close a:hover {
+  color: var(--gc-ink);
+  border-bottom-color: var(--gc-ink);
 }
 
 /* ---------- Practitioner signature ------------------------------------- */

@@ -25,7 +25,7 @@ A flowing, full-body session designed to settle the nervous system and release t
 
 ## Myofascial Release
 
-Slow, sustained pressure applied to the connective tissue that wraps every muscle and organ. Where relaxation work moves over the body, myofascial release sinks in and waits — letting the tissue soften on its own time. Especially helpful for old injuries, postural patterns, and areas that haven't responded to other approaches.
+Slow, sustained pressure that softens the connective tissue where chronic patterns live. Where relaxation work moves over the body, myofascial release sinks in and waits — letting the tissue release on its own time. Deeply restorative, and quietly powerful; especially helpful for old injuries, postural patterns, and areas that haven't responded to other approaches.
 
 | Length | Studio | Mobile |
 | --- | --- | --- |
@@ -82,7 +82,7 @@ Package terms:
 
 ## Booking
 
-Sessions can be booked by emailing [aaronmmartz@gmail.com](mailto:aaronmmartz@gmail.com) or through the [contact page](/contact/).
+Find a time on the [booking page](/contact/).
 
 > Online self-booking is coming soon. *(TODO: replace with scheduler link once chosen.)*
 

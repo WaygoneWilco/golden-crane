@@ -23,6 +23,6 @@ I trained in several traditions and I draw from all of them, depending on what y
 
 ### Outside the Studio
 
-*(TODO: a sentence or two about who you are outside of work — hobbies, what drew you to the cranes, anything that helps people feel they know you a little before they walk in. Optional but warm.)*
+I love walking in the woods with my cat, foraging mushrooms and plants, and enjoying my community of friends. Cranes hold a special place in my heart for their gentle yet powerful orientation to life.
 
-If anything here resonates, I'd love to hear from you.
+<p class="gc-essay-close">If anything here resonates, I'd love to <a href="/contact/">hear from you</a>.</p>

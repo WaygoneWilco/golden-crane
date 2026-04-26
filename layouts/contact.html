@@ -1,35 +1,13 @@
 {{ define "main" }}
   {{ partial "page-header" . }}
 
-  <section class="gc-section--tight" style="padding-top: 0; padding-bottom: clamp(3rem, 5vw, 4rem);">
+  <section class="gc-section--tight" style="padding-top: 0; padding-bottom: clamp(5rem, 9vw, 7rem);">
     <div class="gc-container--narrow">
       {{ with .Content }}
-        <div class="content text-center" style="max-width: 36rem; margin: 0 auto 3rem;">
+        <div class="content text-center" style="max-width: 36rem; margin: 0 auto;">
           {{ . }}
         </div>
       {{ end }}
-    </div>
-  </section>
-
-  <section class="gc-section--tight" style="padding-top: 0; padding-bottom: clamp(5rem, 9vw, 7rem);">
-    <div class="gc-container--narrow" style="max-width: 36rem;">
-      <form action="{{ site.Params.contact_form_action }}" method="POST" class="gc-form">
-        <div class="gc-field">
-          <label for="name" class="gc-label">Your Name</label>
-          <input id="name" name="name" class="gc-input" type="text" placeholder=""/>
-        </div>
-        <div class="gc-field">
-          <label for="email" class="gc-label">Email</label>
-          <input id="email" name="email" class="gc-input" type="email" placeholder=""/>
-        </div>
-        <div class="gc-field">
-          <label for="message" class="gc-label">A note about what you're looking for</label>
-          <textarea id="message" name="message" class="gc-input gc-textarea" rows="6" placeholder=""></textarea>
-        </div>
-        <button type="submit" class="gc-textlink" style="border-bottom-color: var(--gc-ink); margin-top: 1rem; cursor: pointer; background: none;">
-          Send the note
-        </button>
-      </form>
     </div>
   </section>
 {{ end }}
