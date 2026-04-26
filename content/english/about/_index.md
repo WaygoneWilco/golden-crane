@@ -2,7 +2,7 @@
 title: "Meet Aaron Martz, LMT"
 meta_title: "About — Golden Crane Massage Therapy"
 description: "Aaron Martz is a Licensed Massage Therapist based in Ann Arbor, Michigan, offering relaxation massage, myofascial release, polarity therapy, and foot reflexology."
-image: "/images/image-placeholder.png" # TODO: replace with Aaron's headshot
+image: "" # TODO: add Aaron's headshot here, e.g. "/images/aaron.jpg"
 layout: "about"
 draft: false
 ---

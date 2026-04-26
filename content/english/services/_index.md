@@ -7,7 +7,7 @@ draft: false
 
 Every session begins with a few minutes of conversation so we can shape the work to where you actually are that day. The modalities below describe distinct approaches, but in practice they often blend — most sessions weave together what your body is asking for.
 
-> **Note:** The rates below are placeholders while pricing is finalized. *(TODO: replace with actual rates.)*
+Pricing is straightforward: every modality is the same rate for the same length of time, so you can choose by what your body needs that day rather than by cost. Mobile sessions include travel within the service area.
 
 ---
 
@@ -17,9 +17,9 @@ A flowing, full-body session designed to settle the nervous system and release t
 
 | Length | Studio | Mobile |
 | --- | --- | --- |
-| 60 minutes | $95 *(TODO)* | $135 *(TODO)* |
-| 90 minutes | $135 *(TODO)* | $175 *(TODO)* |
-| 120 minutes | $175 *(TODO)* | $215 *(TODO)* |
+| 60 minutes | $100 | $150 |
+| 90 minutes | $135 | $180 |
+| 120 minutes | $175 | $210 |
 
 ---
 
@@ -29,8 +29,8 @@ Slow, sustained pressure applied to the connective tissue that wraps every muscl
 
 | Length | Studio | Mobile |
 | --- | --- | --- |
-| 60 minutes | $105 *(TODO)* | $145 *(TODO)* |
-| 90 minutes | $150 *(TODO)* | $190 *(TODO)* |
+| 60 minutes | $100 | $150 |
+| 90 minutes | $135 | $180 |
 
 ---
 
@@ -40,8 +40,8 @@ A gentle, fully clothed session rooted in the work of Dr. Randolph Stone. Light 
 
 | Length | Studio | Mobile |
 | --- | --- | --- |
-| 60 minutes | $90 *(TODO)* | $130 *(TODO)* |
-| 90 minutes | $130 *(TODO)* | $170 *(TODO)* |
+| 60 minutes | $100 | $150 |
+| 90 minutes | $135 | $180 |
 
 ---
 
@@ -51,8 +51,8 @@ Focused work on the feet using reflex points that correspond to the rest of the 
 
 | Length | Studio | Mobile |
 | --- | --- | --- |
-| 30 minutes | $55 *(TODO)* | $95 *(TODO)* |
-| 60 minutes | $95 *(TODO)* | $135 *(TODO)* |
+| 30 minutes | $60 | $100 |
+| 60 minutes | $100 | $150 |
 
 ---
 

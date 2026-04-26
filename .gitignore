@@ -12,3 +12,6 @@ resources
 .hugo_build.lock
 jsconfig.json
 yarn.lock
+
+# Local-only business artifacts (financial models, planning docs, etc.) — never publish
+business/

@@ -1,150 +1,167 @@
 {{ define "main" }}
-  <!-- Banner -->
-  {{ with .Params.banner }}
-    <section class="section pt-14">
-      <div class="container">
-        <div class="row justify-center">
-          <div class="lg:col-7 md:col-9 mb-8 text-center">
-            <h1 class="mb-4 text-h3 lg:text-h1">
-              {{ .title | markdownify }}
-            </h1>
-            <p class="mb-8">
-              {{ .content | markdownify }}
-            </p>
-            {{ with .button }}
-              {{ if .enable }}
-                <a
-                  class="btn btn-primary"
-                  href="{{ .link | absURL }}"
-                  {{ if strings.HasPrefix .link `http` }}
-                    target="_blank" rel="noopener"
-                  {{ end }}>
-                  {{ .label }}
-                </a>
-              {{ end }}
-            {{ end }}
+  {{/* ---------- HERO / CHAPTER OPENING ---------- */}}
+  <section class="gc-section gc-hero" style="padding-top: clamp(4rem, 8vw, 7rem); padding-bottom: clamp(3rem, 5vw, 5rem); position: relative;">
+    <span class="gc-hero-corner gc-hero-corner--tl" aria-hidden="true"></span>
+    <span class="gc-hero-corner gc-hero-corner--tr" aria-hidden="true"></span>
+    <span class="gc-hero-corner gc-hero-corner--bl" aria-hidden="true"></span>
+    <span class="gc-hero-corner gc-hero-corner--br" aria-hidden="true"></span>
+    <div class="gc-container--narrow text-center">
+      <p class="gc-eyebrow">Massage Therapy &nbsp;·&nbsp; Energy Work</p>
+      <h1 class="gc-display gc-display--xl mt-8 mb-6">Golden&nbsp;Crane</h1>
+      <p class="gc-subtitle mb-10 mx-auto" style="max-width: 30rem;">
+        Slow, attentive bodywork — and the gift of an unhurried hour.
+      </p>
+      <div class="gc-chapter-rule">
+        <span class="gc-ornament-mark" aria-hidden="true">
+          <svg viewBox="0 0 36 18" fill="currentColor">
+            <path d="M18 0 L 24 9 L 18 18 L 12 9 Z"/>
+            <circle cx="3" cy="9" r="1.6" opacity="0.7"/>
+            <circle cx="33" cy="9" r="1.6" opacity="0.7"/>
+          </svg>
+        </span>
+      </div>
+      <p class="gc-eyebrow" style="margin-top: 1.5rem;">Aaron Martz, LMT &nbsp;·&nbsp; Ann&nbsp;Arbor, Michigan</p>
+    </div>
+  </section>
+
+  {{/* ---------- ESSAY ---------- */}}
+  <section class="gc-section--tight" style="padding-bottom: clamp(4rem, 7vw, 6rem);">
+    <div class="gc-container--narrow text-center">
+      <p class="gc-lede">
+        An hour at the studio is unhurried, meticulous, and shaped to who you are when you walk in. Every session begins with a few minutes of conversation, then a long breath, then the work.
+      </p>
+    </div>
+  </section>
+
+  {{/* ---------- THE MENU (modalities as treatment menu) ---------- */}}
+  <section class="gc-section gc-section--sand">
+    <div class="gc-container">
+      <div class="text-center mb-12">
+        <p class="gc-eyebrow">The Menu</p>
+        <h2 class="gc-display gc-display--lg mt-4">Four ways to find ease</h2>
+      </div>
+
+      <div class="gc-menu">
+        <div class="gc-menu-item">
+          <div class="gc-menu-row">
+            <span class="gc-menu-name">Relaxation Massage</span>
+            <span class="gc-menu-leader"></span>
+            <span class="gc-menu-price">60 min · $100&nbsp;&nbsp;|&nbsp;&nbsp;90 min · $135</span>
           </div>
-          {{ with .image }}
-            <div class="col-12">
-              {{/* image modules comes from https://github.com/gethugothemes/hugo-modules/tree/master/images */}}
-              {{ partial "image" (dict "Src" . "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto lg:!max-w-[800px]" "DisplayXL" "800x" ) }}
-            </div>
-          {{ end }}
+          <p class="gc-menu-desc">A flowing, full-body session designed to settle the nervous system. Long, even strokes; comfortable pressure; nothing rushed.</p>
+        </div>
+
+        <div class="gc-menu-item">
+          <div class="gc-menu-row">
+            <span class="gc-menu-name">Myofascial Release</span>
+            <span class="gc-menu-leader"></span>
+            <span class="gc-menu-price">60 min · $100&nbsp;&nbsp;|&nbsp;&nbsp;90 min · $135</span>
+          </div>
+          <p class="gc-menu-desc">Slow, sustained pressure to soften the connective tissue that holds chronic patterns. Especially helpful for old injuries and postural strain.</p>
+        </div>
+
+        <div class="gc-menu-item">
+          <div class="gc-menu-row">
+            <span class="gc-menu-name">Polarity Therapy</span>
+            <span class="gc-menu-leader"></span>
+            <span class="gc-menu-price">60 min · $100&nbsp;&nbsp;|&nbsp;&nbsp;90 min · $135</span>
+          </div>
+          <p class="gc-menu-desc">A gentle, fully clothed session rooted in the work of Dr. Randolph Stone — light touch that invites the body's natural flow to rebalance.</p>
+        </div>
+
+        <div class="gc-menu-item">
+          <div class="gc-menu-row">
+            <span class="gc-menu-name">Foot Reflexology</span>
+            <span class="gc-menu-leader"></span>
+            <span class="gc-menu-price">30 min · $60&nbsp;&nbsp;|&nbsp;&nbsp;60 min · $100</span>
+          </div>
+          <p class="gc-menu-desc">Focused work on the feet using reflex points that connect to the rest of the body. A surprisingly deep experience on its own; a beautiful add-on to anything else.</p>
         </div>
       </div>
-    </section>
-  {{ end }}
-  <!-- /Banner -->
 
-  <!-- Features -->
-  {{ range $i, $e:= .Params.features }}
-    <section class="section-sm {{ if (modBool $i 2) }}bg-gradient{{ end }}">
-      <div class="container">
-        <div class="row items-center justify-between">
-          <div
-            class="mb:md-0 {{ if not (modBool $i 2) }}
-              md:order-2
-            {{ end }} md:col-5 mb-6">
-            {{ partial "image" (dict "Src" .image "Alt" "feature image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
-          </div>
-          <div
-            class="{{ if not (modBool $i 2) }}
-              md:order-1
-            {{ end }} md:col-7 lg:col-6">
-            <h2 class="mb-4">
-              {{ .title | markdownify }}
-            </h2>
-            <p class="mb-8 text-lg">
-              {{ .content | markdownify }}
+      <p class="text-center mt-10 gc-subtitle">Mobile sessions add $50 within the service area.</p>
+      <p class="text-center mt-6">
+        <a href="/services/" class="gc-textlink">Read the full menu</a>
+      </p>
+    </div>
+  </section>
+
+  {{/* ---------- THE STUDIO ---------- */}}
+  <section class="gc-section">
+    <div class="gc-container">
+      <div class="gc-twoup gc-twoup--studio">
+        <div>
+          <p class="gc-eyebrow">The Studio</p>
+          <h2 class="gc-display gc-display--lg mt-4 mb-6">A room made to settle into.</h2>
+          <div class="gc-essay" style="margin-left: 0; margin-right: 0;">
+            <p>
+              The studio in Ann Arbor is small and warm — a single room kept quiet on purpose. Linens are washed in unscented soap; the music is barely there; the light stays low.
             </p>
-            <ul>
-              {{ range .bulletpoints }}
-                <li class="relative mb-4 pl-6">
-                  <i class="fa fa-check absolute left-0 top-1.5"></i>
-                  {{ . | markdownify }}
-                </li>
-              {{ end }}
-            </ul>
-            {{ with .button }}
-              {{ if .enable }}
-                <a class="btn btn-primary mt-6" href="{{ .link | absURL }}">
-                  {{ .label }}
-                  <i class="fa fa-arrow-right pl-2"></i>
-                </a>
-              {{ end }}
-            {{ end }}
+            <p>
+              For clients who'd rather not travel, mobile visits are available in Ann Arbor, Ypsilanti, Belleville, Saline, Milan, and Dexter. I bring everything; you provide a quiet hour and a clear space about the size of a queen bed.
+            </p>
           </div>
+          <p class="mt-8">
+            <a href="/about/" class="gc-textlink">Meet Aaron</a>
+          </p>
         </div>
+
+        <figure class="gc-figure">
+          <span class="gc-corner-tr" aria-hidden="true"></span>
+          <span class="gc-corner-bl" aria-hidden="true"></span>
+          <div class="gc-figure-inner">
+            <img src="/images/crane.png" alt="Sandhill crane illustration" class="gc-figure-crane" />
+          </div>
+        </figure>
       </div>
-    </section>
-  {{ end }}
-  <!-- /Features -->
+    </div>
+  </section>
 
-  <!-- Testimonials -->
-  {{ with site.GetPage "sections/testimonial" }}
-    {{ if .Params.enable }}
-      <section class="section">
-        <div class="container">
-          <div class="row">
-            <div class="md:col-10 lg:col-8 xl:col-6 mx-auto mb-12 text-center">
-              <h2 class="mb-4">
-                {{ .Title | markdownify }}
-              </h2>
-              <p>
-                {{ .Params.description | markdownify }}
-              </p>
-            </div>
-            <div class="col-12">
-              <div class="swiper testimonial-slider">
-                <div class="swiper-wrapper">
-                  {{ range .Params.testimonials }}
-                    <div class="swiper-slide">
-                      <div
-                        class="bg-light dark:bg-darkmode-light rounded-lg px-7 py-10">
-                        <div class="text-text-dark dark:text-white">
-                          <svg
-                            width="33"
-                            height="20"
-                            viewBox="0 0 33 20"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M1.28375 19.41L0.79375 18.64C1.21375 17.0067 1.75042 15.07 2.40375 12.83C3.05708 10.5433 3.75708 8.28 4.50375 6.04C5.29708 3.75333 6.06708 1.77 6.81375 0.0899959H15.3538C14.9338 2.09666 14.4904 4.26667 14.0238 6.6C13.5571 8.88666 13.1371 11.15 12.7638 13.39C12.4371 15.5833 12.1571 17.59 11.9238 19.41H1.28375ZM31.69 0.0899959L32.18 0.859998C31.76 2.54 31.2233 4.5 30.57 6.74C29.9167 8.98 29.2167 11.2433 28.47 13.53C27.7233 15.77 26.9533 17.73 26.16 19.41H17.69C18.0167 17.9167 18.3433 16.33 18.67 14.65C18.9967 12.9233 19.3 11.22 19.58 9.54C19.9067 7.81333 20.1867 6.15667 20.42 4.57C20.7 2.93666 20.91 1.44333 21.05 0.0899959H31.69Z"
-                              fill="currentColor" />
-                          </svg>
-                        </div>
-                        <blockquote class="mt-8">
-                          {{ .content | markdownify }}
-                        </blockquote>
-                        <div class="mt-11 flex items-center">
-                          <div class="text-text-dark dark:text-white">
-                            {{ partial "image" (dict "Src" .avatar "Size" "50x50" "Class" "rounded-full" "Alt" .name) }}
-                          </div>
-                          <div class="ml-4">
-                            <h3 class="h5 font-primary font-semibold">
-                              {{ .name }}
-                            </h3>
-                            <p class="text-text-dark dark:text-white">
-                              {{ .designation | markdownify }}
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  {{ end }}
-                </div>
-                <div
-                  class="testimonial-slider-pagination mt-9 flex items-center justify-center text-center"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    {{ end }}
-  {{ end }}
-  <!-- /Testimonials -->
+  {{/* ---------- PULL QUOTE ---------- */}}
+  <section class="gc-section gc-section--sand">
+    <div class="gc-container">
+      <blockquote class="gc-pullquote">
+        Aaron has a way of meeting your body exactly where it is. I came in tense and unsure what I needed; I left feeling like I'd been listened to without saying a word.
+      </blockquote>
+      <p class="gc-pullquote-attr">A client &nbsp;·&nbsp; Ann Arbor</p>
+    </div>
+  </section>
 
-  <!-- Call to action -->
-  {{ partial "call-to-action" . }}
-  <!-- /Call to action -->
+  {{/* ---------- CLOSING / BOOKING ---------- */}}
+  <section class="gc-section">
+    <div class="gc-container--narrow text-center">
+      <p class="gc-eyebrow">Make an Appointment</p>
+      <h2 class="gc-display gc-display--lg mt-4 mb-6">An hour is set aside for you.</h2>
+      <p class="gc-subtitle mb-10 mx-auto" style="max-width: 32rem;">
+        Sessions run Tuesday through Saturday, with evening hours on Wednesday and Thursday. Email is the fastest way to find a time.
+      </p>
+
+      <div style="display: flex; flex-direction: column; gap: 0.75rem; align-items: center;">
+        <a href="mailto:aaronmmartz@gmail.com" class="gc-textlink">aaronmmartz@gmail.com</a>
+        <p class="gc-eyebrow" style="margin-top: 0.5rem; opacity: 0.6;">or</p>
+        <a href="/contact/" class="gc-textlink">Send a note</a>
+      </div>
+
+      <p class="gc-subtitle" style="margin-top: 3rem; max-width: 30rem; margin-left: auto; margin-right: auto; color: var(--gc-text-light);">
+        Studio in Ann Arbor &middot; address shared on booking. Mobile sessions in Ann Arbor, Ypsilanti, Belleville, Saline, Milan, and Dexter.
+      </p>
+
+      <div class="gc-chapter-rule" style="margin-top: 5rem;">
+        <span class="gc-ornament-mark" aria-hidden="true">
+          <svg viewBox="0 0 36 18" fill="currentColor">
+            <path d="M18 0 L 24 9 L 18 18 L 12 9 Z"/>
+            <circle cx="3" cy="9" r="1.6" opacity="0.7"/>
+            <circle cx="33" cy="9" r="1.6" opacity="0.7"/>
+          </svg>
+        </span>
+      </div>
+      <p class="gc-eyebrow text-center" style="margin-top: 1.5rem; color: var(--gc-crane);">A Gentle Delight</p>
+    </div>
+  </section>
+
+  {{/* ---------- STICKY MOBILE BOOKING BAR ---------- */}}
+  <a href="mailto:aaronmmartz@gmail.com" class="gc-mobile-cta" aria-label="Email to book a session">
+    <span class="gc-mobile-cta-label">Book a session</span>
+    <span class="gc-mobile-cta-sub">aaronmmartz@gmail.com</span>
+  </a>
 {{ end }}

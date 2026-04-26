@@ -36,15 +36,4 @@ features:
       label: "See Services & Rates"
       link: "/services/"
 
-  - title: "A Gentle Delight"
-    image: "/images/crane.png"
-    content: "The cranes on our card aren't just decoration. Sandhill cranes mate for life, return to the same wetlands year after year, and move through the world with a quiet, deliberate grace. That's the spirit of this practice — steady, attentive, and a little bit magic."
-    bulletpoints:
-      - "Sessions begin and end on time, in a warm and welcoming space"
-      - "First-time clients receive a brief consultation to shape the session"
-      - "Gift certificates available for any service"
-    button:
-      enable: true
-      label: "Read Common Questions"
-      link: "/faq/"
 ---
