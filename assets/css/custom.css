@@ -309,12 +309,16 @@ a:hover {
 .gc-figure > .gc-corner-bl {
   content: "";
   position: absolute;
-  width: 110px;
-  height: 110px;
+  width: 175px;
+  height: 150px;
   background-size: contain;
   background-repeat: no-repeat;
   pointer-events: none;
 }
+.gc-figure::before  { background-position: top left; }
+.gc-figure::after   { background-position: bottom right; }
+.gc-figure > .gc-corner-tr { background-position: top right; }
+.gc-figure > .gc-corner-bl { background-position: bottom left; }
 .gc-figure::before {
   top: 0; left: 0;
   background-image: url("/images/ornaments/corner-tl.png");
@@ -355,58 +359,62 @@ a:hover {
 }
 .gc-hero-corner {
   position: absolute;
-  width: 64px;
-  height: 64px;
+  width: 105px;
+  height: 90px;
   background-size: contain;
   background-repeat: no-repeat;
   pointer-events: none;
-  opacity: 0.85;
+  opacity: 0.9;
 }
 .gc-hero-corner--tl {
   top: 1rem; left: 1rem;
   background-image: url("/images/ornaments/corner-tl.png");
+  background-position: top left;
 }
 .gc-hero-corner--tr {
   top: 1rem; right: 1rem;
   background-image: url("/images/ornaments/corner-tr.png");
+  background-position: top right;
 }
 .gc-hero-corner--bl {
   bottom: 1rem; left: 1rem;
   background-image: url("/images/ornaments/corner-bl.png");
+  background-position: bottom left;
 }
 .gc-hero-corner--br {
   bottom: 1rem; right: 1rem;
   background-image: url("/images/ornaments/corner-br.png");
+  background-position: bottom right;
 }
 
 @media (min-width: 768px) {
   .gc-hero-corner {
-    width: 130px;
-    height: 130px;
+    width: 200px;
+    height: 170px;
   }
   .gc-hero-corner--tl, .gc-hero-corner--tr {
-    top: 2.25rem;
+    top: 2rem;
   }
   .gc-hero-corner--bl, .gc-hero-corner--br {
-    bottom: 2.25rem;
+    bottom: 2rem;
   }
-  .gc-hero-corner--tl, .gc-hero-corner--bl { left: 2.25rem; }
-  .gc-hero-corner--tr, .gc-hero-corner--br { right: 2.25rem; }
+  .gc-hero-corner--tl, .gc-hero-corner--bl { left: 2rem; }
+  .gc-hero-corner--tr, .gc-hero-corner--br { right: 2rem; }
 }
 
 @media (min-width: 1280px) {
   .gc-hero-corner {
-    width: 150px;
-    height: 150px;
+    width: 260px;
+    height: 220px;
   }
   .gc-hero-corner--tl, .gc-hero-corner--tr {
-    top: 3rem;
+    top: 2.75rem;
   }
   .gc-hero-corner--bl, .gc-hero-corner--br {
-    bottom: 3rem;
+    bottom: 2.75rem;
   }
-  .gc-hero-corner--tl, .gc-hero-corner--bl { left: 3rem; }
-  .gc-hero-corner--tr, .gc-hero-corner--br { right: 3rem; }
+  .gc-hero-corner--tl, .gc-hero-corner--bl { left: 2.75rem; }
+  .gc-hero-corner--tr, .gc-hero-corner--br { right: 2.75rem; }
 }
 
 /* The chapter ornament SVG sizing */
