@@ -92,8 +92,8 @@ a:hover {
   align-items: center;
   justify-content: center;
   gap: 1.25rem;
-  color: var(--gc-rule);
-  margin: 4rem auto;
+  color: var(--gc-gold);
+  margin: 3rem auto;
   max-width: 320px;
 }
 .gc-chapter-rule::before,
@@ -102,6 +102,7 @@ a:hover {
   flex: 1;
   height: 1px;
   background: currentColor;
+  opacity: 0.6;
 }
 .gc-chapter-rule .gc-ornament {
   width: 24px;
@@ -190,12 +191,12 @@ a:hover {
   font-family: "Cormorant Garamond", Georgia, serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 0.78rem;
+  font-size: 0.85rem;
   letter-spacing: 0.32em;
   text-transform: uppercase;
   color: var(--gc-crane);
   text-align: center;
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
 }
 
 /* ---------- The menu (modalities) --------------------------------------- */
@@ -232,8 +233,14 @@ a:hover {
 .gc-menu-leader {
   flex: 1;
   min-width: 2rem;
-  border-bottom: 1px dotted var(--gc-rule);
-  transform: translateY(-0.25rem);
+  align-self: center;
+  height: 1px;
+  background-image: radial-gradient(circle, var(--gc-crane) 0.85px, transparent 0.85px);
+  background-size: 7px 7px;
+  background-position: bottom;
+  background-repeat: repeat-x;
+  opacity: 0.55;
+  transform: translateY(-2px);
 }
 .gc-menu-price {
   font-family: "Cormorant Garamond", Georgia, serif;
@@ -292,9 +299,9 @@ a:hover {
 .gc-figure {
   position: relative;
   margin: 0;
-  padding: 3rem 2rem;
+  padding: 3.5rem 2.5rem;
   background: var(--gc-paper-warm);
-  min-height: 360px;
+  min-height: 460px;
 }
 .gc-figure::before,
 .gc-figure::after,
@@ -329,16 +336,16 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 320px;
+  min-height: 380px;
   padding: 0.5rem;
 }
 .gc-figure-crane {
   display: block;
   width: auto;
-  max-height: 380px;
-  max-width: 70%;
-  opacity: 0.85;
-  filter: sepia(0.15) saturate(0.9);
+  max-height: 460px;
+  max-width: 78%;
+  opacity: 0.92;
+  filter: sepia(0.18) saturate(0.92) brightness(0.97);
 }
 
 /* ---------- Hero corner flourishes (the brand mark) --------------------- */
@@ -521,6 +528,46 @@ a:hover {
   padding: 0.1em 0.35em;
   border-radius: 2px;
   font-size: 0.95em;
+}
+
+/* ---------- Contact form ----------------------------------------------- */
+
+.gc-form .gc-field {
+  margin-bottom: 1.75rem;
+}
+.gc-form .gc-label {
+  display: block;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.78rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gc-crane);
+  margin-bottom: 0.625rem;
+}
+.gc-form .gc-input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--gc-rule);
+  padding: 0.625rem 0;
+  font-family: "Lora", Georgia, serif;
+  font-size: 1rem;
+  color: var(--gc-ink);
+  line-height: 1.6;
+  border-radius: 0;
+  transition: border-color 200ms ease;
+}
+.gc-form .gc-input:focus {
+  outline: none;
+  border-bottom-color: var(--gc-gold);
+}
+.gc-form .gc-textarea {
+  resize: vertical;
+}
+.gc-form .gc-textarea:focus {
+  border-bottom-color: var(--gc-gold);
 }
 
 /* Accordion styling for FAQ */
