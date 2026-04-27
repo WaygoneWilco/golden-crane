@@ -15,7 +15,7 @@ features:
     content: "Every body carries its own story. Sessions at Golden Crane are tailored to where you are right now — whether that's deep tension that needs slow, patient work, restless energy that wants to settle, or simply the gift of an hour to yourself."
     bulletpoints:
       - "Quiet, unhurried sessions in a calm Ann Arbor studio"
-      - "Mobile visits to your home in Ann Arbor, Ypsilanti, Belleville, Saline, Milan, and Dexter"
+      - "Mobile visits to your home in Ann Arbor, Ypsilanti, Belleville, Saline, Milan, Dexter, and other communities at an equivalent distance"
       - "Four complementary modalities, blended to suit your needs"
       - "Licensed Massage Therapist with training in energy and bodywork traditions"
     button:

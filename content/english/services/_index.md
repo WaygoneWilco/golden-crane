@@ -86,4 +86,4 @@ Find a time on the [booking page](/contact/).
 
 > Online self-booking is coming soon. *(TODO: replace with scheduler link once chosen.)*
 
-Mobile visits available in Ann Arbor, Ypsilanti, Belleville, Saline, Milan, and Dexter.
+Mobile visits available in Ann Arbor, Ypsilanti, Belleville, Saline, Milan, and Dexter — or communities at an equivalent distance.

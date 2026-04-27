@@ -31,7 +31,7 @@ If you're feeling unwell — even mildly — please reschedule. There's no fee f
 
 ## Mobile Visits
 
-- Available in Ann Arbor, Ypsilanti, Belleville, Saline, Milan, and Dexter.
+- Available in Ann Arbor, Ypsilanti, Belleville, Saline, Milan, Dexter, and other communities at an equivalent distance.
 - I bring the table, sheets, and everything else needed; you provide a clear space about the size of a queen bed and a quiet hour.
 - For mobile visits, please confirm the appointment by reply the day before.
 

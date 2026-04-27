@@ -761,6 +761,33 @@ a:hover {
   .gc-twoup--studio {
     grid-template-columns: 5fr 7fr;
   }
+  .gc-twoup--about {
+    grid-template-columns: 7fr 5fr;
+    gap: 4rem;
+  }
+}
+
+/* Practitioner portrait on homepage */
+.gc-portrait {
+  margin: 0;
+  max-width: 420px;
+  background: var(--gc-paper-warm);
+  padding: 0.875rem;
+  box-shadow:
+    0 1px 0 rgba(31, 20, 8, 0.04),
+    0 24px 60px -36px rgba(31, 20, 8, 0.18);
+}
+.gc-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: saturate(0.95);
+}
+@media (max-width: 767px) {
+  .gc-portrait {
+    margin: 0 auto;
+    max-width: 360px;
+  }
 }
 
 /* ---------- Navbar: clean editorial header (project override) --------- */
