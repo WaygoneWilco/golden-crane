@@ -1,0 +1,21 @@
+{{ define "main" }}
+<h2>DR result:</h2>
+<pre>{{ with site.GetPage "sections/resources" }}
+FOUND: yes
+Kind: {{ .Kind }}
+Title: {{ .Title | default "EMPTY" }}
+Name: {{ .Name }}
+Path: {{ .Path }}
+URL: {{ .URL }}
+Section count: {{ len .Sections }}
+{{ range .Sections }}
+  [SEC] Title={{ .Title }} Kind={{ .Kind }} Name={{ .Name }} Path={{ .Path }} Pages={{ len .Pages }}
+  {{ range .Pages }}
+    [PAGE] Title={{ .Title }} Kind={{ .Kind }} Path={{ .Path }}
+  {{ end }}
+{{ end }}
+{{ else }}
+NOT FOUND
+{{ end }}
+</pre>
+{{ end }}

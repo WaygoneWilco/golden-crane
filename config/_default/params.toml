@@ -18,7 +18,7 @@ navbar_fixed = true
 theme_switcher = false
 theme_default = "light" # available options [light/dark/system]
 # Main Sections
-mainSections = ["blog"]
+mainSections = ["resources"]
 # contact form action
 contact_form_action = "#" # TODO: replace with formspree.io or airform.io endpoint
 # google tag manager, see https://developers.google.com/tag-manager/
@@ -59,7 +59,7 @@ exclude = []
 [search]
 enable = true
 primary_color = "#121212"
-include_sections = ["blog"]
+include_sections = ["resources"]
 show_image = true
 show_description = true
 show_tags = true
