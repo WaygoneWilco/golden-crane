@@ -1,0 +1,34 @@
+{{ define "main" }}
+<div class="gc-resources-grid">
+  {{ partial "resources/sidebar" . }}
+  <div class="gc-resources-content">
+
+    {{ partial "components/breadcrumb" (dict "Context" . "Class" "gc-breadcrumb mb-6") }}
+
+    <header class="gc-resources-page-hdg">
+      <p class="gc-eyebrow">Resources</p>
+      <h1 class="gc-resources-title">{{ .Title }}</h1>
+    </header>
+
+    {{ with .Content }}
+    <div class="gc-resources-body">{{ . }}</div>
+    {{ end }}
+
+    <div class="gc-resources-prevnext">
+      {{ with .PrevInSection }}
+      <a class="gc-nav-prev" href="{{ .RelPermalink }}">
+        <span class="gc-nav-prev-label">{{ T "previous" | default "Previous" }} &larr;</span>
+        <span class="gc-nav-prev-title">{{ .Title }}</span>
+      </a>
+      {{ end }}
+      {{ with .NextInSection }}
+      <a class="gc-nav-next" href="{{ .RelPermalink }}">
+        <span class="gc-nav-next-label">&rarr; {{ T "next" | default "Next" }}</span>
+        <span class="gc-nav-next-title">{{ .Title }}</span>
+      </a>
+      {{ end }}
+    </div>
+
+  </div>
+</div>
+{{ end }}

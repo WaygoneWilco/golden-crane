@@ -1,0 +1,45 @@
+{{ $curPage  := . }}
+{{ $curPath  := .Path }}
+{{ $thisSec  := .CurrentSection }}
+
+<nav class="gc-resources-sidebar" aria-label="Resources navigation">
+  <ul class="gc-resources-tree">
+
+{{ range $rootSec := site.Home.Sections }}
+  {{ if eq $rootSec.Path "/resources" }}
+    {{ $docsRoot := $rootSec }}
+    <li class="gc-resources-item gc-resources-item--root">
+      <a class="{{ if eq $curPage $docsRoot }}gc-resources-link--cur{{ end }}"
+         href="{{ $docsRoot.RelPermalink }}">{{ $docsRoot.Title }}</a>
+    </li>
+
+    {{ range $subSec := $docsRoot.Sections }}
+      <li class="gc-resources-item gc-resources-section">
+        <div class="gc-resources-sect-hdg">
+          <a href="{{ $subSec.RelPermalink }}"
+             class="{{ if or (eq $thisSec $subSec) (eq $curPage $subSec) }}gc-resources-sect--open{{ end }}">
+            {{ $subSec.Title }}
+          </a>
+          <span class="gc-resources-sect-count">{{ len $subSec.Pages }}</span>
+        </div>
+
+        {{ if gt (len $subSec.Pages) 0 }}
+          <ul class="gc-resources-sub">
+            {{ range $pg := $subSec.Pages }}
+              <li>
+                <a href="{{ $pg.RelPermalink }}"
+                   class="{{ if eq $curPage $pg }}gc-resources-sub-link--cur{{ end }}">
+                  {{ $pg.Title }}
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </li>
+    {{ end }}
+
+  {{ end }}
+{{ end }}
+
+  </ul>
+</nav>
