@@ -10,6 +10,7 @@ builds
 public
 /resources/
 .hugo_build.lock
+hugo_stats.json
 jsconfig.json
 yarn.lock
 
