@@ -4,27 +4,36 @@ title: "Notes from Clients"
 description: "A few words from people who've spent an hour at Golden Crane."
 
 # Testimonials
-# TODO: replace these placeholder testimonials with real ones (with client permission).
 testimonials:
-  - name: "Placeholder Client"
-    designation: "Ann Arbor"
-    content: "Aaron has a way of meeting your body exactly where it is. I came in tense and unsure what I needed; I left feeling like I'd been listened to without saying a word."
+  - name: "Debbie"
 
-  - name: "Placeholder Client"
-    designation: "Ypsilanti"
-    content: "The myofascial work loosened a knot in my shoulder that's been there for two years. The polarity work at the end was the surprise — I didn't know I needed it until I felt it."
+    content: >-
+      "The pressure he used was great! Loved the techniques with pressure points on neck and legs."
 
-  - name: "Placeholder Client"
-    designation: "Saline"
-    content: "The mobile visit was a gift. The studio came to me and an hour later my whole house felt calmer. I slept through the night for the first time in weeks."
+  - name: "Kathy"
 
-  - name: "Placeholder Client"
-    designation: "Dexter"
-    content: "I've had a lot of massages over the years. This is the first one in a long time where I felt like the practitioner was actually listening to my body, not just running through a routine."
+    content: >-
+      "Excellent!!! Very relaxing – working and releasing tension in neck and back was the best."
 
-  - name: "Placeholder Client"
-    designation: "Ann Arbor"
-    content: "Reflexology was new to me. By the end I couldn't tell whether my feet had changed or my whole nervous system had — both, I think. I've been back four times now."
+  - name: "Candace"
+
+    content: >-
+      "Perfect touch. Very good at locating spots that needed work."
+
+  - name: "Doug"
+
+    content: >-
+      "THE BEST -Very relaxing, healing and enjoyable."
+
+  - name: "Rachel"
+
+    content: >-
+      "All of the massage was great, he addressed all of my concerns. I Wish we could have done 90 minutes, he was amazing!"
+
+  - name: "Marcy"
+
+    content: >-
+      "I liked all of his techniques but he did an exceptional job on my feet. I wish I'd made a 90 minute appointment :)"
 
 # don't create a separate page (the /testimonials/ page is its own _index.md)
 build:
