@@ -1,13 +1,25 @@
 {{ define "main" }}
   {{ partial "page-header" . }}
 
-  <section class="gc-section--tight" style="padding-top: 0; padding-bottom: clamp(5rem, 9vw, 7rem);">
+
+  <section
+    class="gc-section--tight"
+    style="padding-top: 0; padding-bottom: clamp(5rem, 9vw, 7rem);">
     <div class="gc-container--narrow">
       {{ with .Content }}
-        <div class="content text-center" style="max-width: 36rem; margin: 0 auto;">
+        <div
+          class="content text-center"
+          style="max-width: 36rem; margin: 0 auto;">
           {{ . }}
         </div>
       {{ end }}
+
+
+      <div style="max-width: 36rem; margin: 2rem auto 0;">
+        <!-- Start Square Appointments Embed Code -->
+        <script src="https://square.site/appointments/buyer/widget/yzf9inwgoofy33/LN00XQXRMV92Q.js"></script>
+        <!-- End Square Appointments Embed Code -->
+      </div>
     </div>
   </section>
 {{ end }}

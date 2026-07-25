@@ -12,6 +12,4 @@ If you have questions about the work, the studio, or which modality might suit y
 
 **Studio:** Ann Arbor, Michigan area. Address shared on booking.
 
-**Mobile visits:** Ann Arbor · Ypsilanti · Belleville · Saline · Milan · Dexter *(or communities at an equivalent distance)*
-
-> Online self-booking is coming soon. *(TODO: replace with scheduler embed once chosen.)*
+**Mobile visits:** Ann Arbor · Ypsilanti · Belleville · Saline · Milan · Dexter _(or communities at an equivalent distance)_
