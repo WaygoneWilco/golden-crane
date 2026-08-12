@@ -20,11 +20,7 @@ For Foot Reflexology, you stay fully clothed; loose, comfortable layers are idea
 {{< /accordion >}}
 
 {{< accordion "What's the difference between the two offerings?" >}}
-**Integrative Massage** is a tailored session that may combine broad, flowing massage, slow myofascial work, and gentle polarity-based energy work, depending on what your body needs that day. **Foot Reflexology** focuses on the feet, where reflex points connect to the rest of the body. It can be a standalone session or a beautiful add-on to Integrative Massage.
-{{< /accordion >}}
-
-{{< accordion "How do mobile visits work?" >}}
-For sessions in your home, I bring everything I need: table, sheets, oil, music. You provide a clear space about the size of a queen bed. Mobile visits are currently available in Ann Arbor, Ypsilanti, Belleville, Saline, Milan, and Dexter — or communities at an equivalent distance; just ask if you're nearby. Mobile rates include travel within those areas.
+**Integrative Massage** is a tailored session that may combine broad, flowing massage, slow myofascial work, craniosacral techniques, and gentle polarity-based energy work, depending on what your body needs that day. **Foot Reflexology** focuses on the feet, where reflex points connect to the rest of the body. It can be a standalone session or a beautiful add-on to Integrative Massage.
 {{< /accordion >}}
 
 {{< accordion "How far in advance should I book?" >}}
@@ -32,7 +28,7 @@ A week or two of notice is usually enough to find a time that works. For weekend
 {{< /accordion >}}
 
 {{< accordion "Do you take insurance?" >}}
-Not at this time. Sessions are paid directly. *(TODO: confirm whether you'd like to mention HSA/FSA eligibility or anything about superbills.)*
+Not at this time. Sessions are paid directly.
 {{< /accordion >}}
 
 {{< accordion "What's your cancellation policy?" >}}

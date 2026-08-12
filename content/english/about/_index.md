@@ -19,7 +19,6 @@ I trained in several traditions and weave them together in each Integrative Mass
 
 - Licensed Massage Therapist (LMT), Michigan
 - Training in massage therapy, myofascial release, polarity therapy, and foot reflexology
-- *(TODO: add specific certifications, years of experience, school names, license number if you'd like to display it)*
 
 ### Outside the Studio
 
