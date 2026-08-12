@@ -1,7 +1,7 @@
 ---
 title: "Meet Aaron Martz, LMT"
 meta_title: "About — Golden Crane Massage Therapy"
-description: "Aaron Martz is a Licensed Massage Therapist based in Ann Arbor, Michigan, offering relaxation massage, myofascial release, polarity therapy, and foot reflexology."
+description: "Aaron Martz is a Licensed Massage Therapist based in Ann Arbor, Michigan, offering Integrative Massage and Foot Reflexology."
 image: "/images/aaron.jpg"
 layout: "about"
 draft: false
@@ -13,12 +13,12 @@ My path into bodywork came from a simple observation: how rare it is, in our day
 
 ### How I Work
 
-I trained in several traditions and I draw from all of them, depending on what your body is asking for that day. A session might begin with broad, flowing strokes to settle the nervous system, move into focused myofascial work where tension is locked in, and end with a few minutes of polarity therapy to help everything integrate. Other sessions stay close to one modality the whole way through. We'll talk before we begin so you know what to expect.
+I trained in several traditions and weave them together in each Integrative Massage, depending on what your body is asking for that day. A session might begin with broad, flowing strokes to settle the nervous system, move into focused myofascial work where tension is locked in, and include polarity-based energy work to help everything integrate. We'll talk before we begin so you know what to expect.
 
 ### My Training
 
 - Licensed Massage Therapist (LMT), Michigan
-- Training in Relaxation Massage, Myofascial Release, Polarity Therapy, and Foot Reflexology
+- Training in massage therapy, myofascial release, polarity therapy, and foot reflexology
 - *(TODO: add specific certifications, years of experience, school names, license number if you'd like to display it)*
 
 ### Outside the Studio

@@ -6,9 +6,9 @@ layout: "contact"
 draft: false
 ---
 
-Sessions are booked directly on the site — see the scheduler below.
+Ready to book? Use the button below to choose a time through Vagaro.
 
-If you have questions about the work, the studio, or which modality might suit you best, you're welcome to email me at **[aaronmmartz@gmail.com](mailto:aaronmmartz@gmail.com)**. I'll reply within a day or two.
+If you have questions about the work, the studio, or which offering might suit you best, you're welcome to email me at **[aaronmmartz@gmail.com](mailto:aaronmmartz@gmail.com)**. I'll reply within a day or two.
 
 **Studio:** Ann Arbor, Michigan area. Address shared on booking.
 

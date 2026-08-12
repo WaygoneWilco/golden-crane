@@ -5,7 +5,7 @@ description: "Give an hour of care. Golden Crane gift certificates are available
 draft: false
 ---
 
-An hour at Golden Crane is one of the kinder things you can give someone. Gift certificates are available for any service — relaxation massage, myofascial release, polarity therapy, or foot reflexology — and any session length.
+An hour at Golden Crane is one of the kinder things you can give someone. Gift certificates are available for Integrative Massage or Foot Reflexology, and for any session length.
 
 ### How it works
 

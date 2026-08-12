@@ -1,19 +1,19 @@
 ---
 title: "Services & Rates"
 meta_title: "Services & Rates — Golden Crane Massage Therapy"
-description: "Relaxation Massage, Myofascial Release, Polarity Therapy, and Foot Reflexology. Studio sessions in Ann Arbor and mobile visits across the surrounding area."
+description: "Integrative Massage and Foot Reflexology. Studio sessions in Ann Arbor and mobile visits across the surrounding area."
 draft: false
 ---
 
-Every session begins with a few minutes of conversation so we can shape the work to where you actually are that day. The modalities below describe distinct approaches, but in practice they often blend — most sessions weave together what your body is asking for.
+Every session begins with a few minutes of conversation so we can shape the work to where you actually are that day. Golden Crane offers two ways to work: Integrative Massage and Foot Reflexology. Integrative Massage brings together the approaches that best fit your needs; reflexology can be booked on its own or added to a massage session.
 
-Pricing is straightforward: every modality is the same rate for the same length of time, so you can choose by what your body needs that day rather than by cost. Mobile sessions include travel within the service area.
+Pricing is straightforward and based on session length. Mobile sessions include travel within the service area.
 
 ---
 
-## Relaxation Massage
+## Integrative Massage
 
-A flowing, full-body session designed to settle the nervous system and release the tension we accumulate without noticing. Long, even strokes; comfortable pressure; nothing rushed. This is the right choice if you simply need to be cared for.
+A tailored massage session that draws on broad, flowing strokes, focused myofascial release, and gentle polarity-based energy work as needed. We decide together what feels most supportive for your body that day, so no two sessions need to follow the same formula.
 
 | Length | Studio | Mobile |
 | --- | --- | --- |
@@ -23,31 +23,9 @@ A flowing, full-body session designed to settle the nervous system and release t
 
 ---
 
-## Myofascial Release
-
-Slow, sustained pressure that softens the connective tissue where chronic patterns live. Where relaxation work moves over the body, myofascial release sinks in and waits — letting the tissue release on its own time. Deeply restorative, and quietly powerful; especially helpful for old injuries, postural patterns, and areas that haven't responded to other approaches.
-
-| Length | Studio | Mobile |
-| --- | --- | --- |
-| 60 minutes | $100 | $150 |
-| 90 minutes | $135 | $180 |
-
----
-
-## Polarity Therapy
-
-A gentle, fully clothed session rooted in the work of Dr. Randolph Stone. Light contact at specific points on the body invites the natural flow of energy to rebalance — quieting an overactive system, lifting a heavy one. People often describe a polarity session as feeling deeply met without being worked on.
-
-| Length | Studio | Mobile |
-| --- | --- | --- |
-| 60 minutes | $100 | $150 |
-| 90 minutes | $135 | $180 |
-
----
-
 ## Foot Reflexology
 
-Focused work on the feet using reflex points that correspond to the rest of the body. A surprisingly profound experience: most people leave a reflexology session feeling not just lighter on their feet, but lighter overall. A good standalone session, and a beautiful add-on to any other modality.
+Focused work on the feet using reflex points that correspond to the rest of the body. A surprisingly profound experience: most people leave a reflexology session feeling not just lighter on their feet, but lighter overall. A good standalone session, and a beautiful add-on to Integrative Massage.
 
 | Length | Studio | Mobile |
 | --- | --- | --- |
@@ -56,34 +34,13 @@ Focused work on the feet using reflex points that correspond to the rest of the 
 
 ---
 
-## Packages
-
-For clients who want to make this work a regular part of their month, prepaid packages offer a small thank-you for your commitment. Packages are studio sessions, redeemable for any modality at the chosen length.
-
-| Length | Single | 3-Pack *(save 5%)* | 6-Pack *(save 10%)* |
-| --- | --- | --- | --- |
-| 60 minutes (any modality) | $100 | $285 | $540 |
-| 90 minutes (any modality) | $135 | $385 | $725 |
-| 120 minutes relaxation | $175 | $500 | $945 |
-| 60 minutes reflexology | $100 | $285 | $540 |
-| 30 minutes reflexology | $60 | $170 | $325 |
-
-Package terms:
-
-- Sessions expire 12 months from the date of purchase.
-- Transferable — you can gift remaining sessions to someone else.
-- Non-refundable, but unused sessions can be applied to a different length at the per-session rate.
-- Studio sessions only. For mobile prepayment, [gift certificates](/gift-certificates/) are available for any individual session.
-
 ## Add-Ons & Gift Certificates
 
-- **Reflexology add-on** — add 30 minutes of foot reflexology to any massage for $45.
+- **Reflexology add-on** — add 30 minutes of Foot Reflexology to an Integrative Massage for $45.
 - **Gift certificates** — [available for any service](/gift-certificates/).
 
 ## Booking
 
-Find a time on the [booking page](/contact/).
-
-> Online self-booking is coming soon. *(TODO: replace with scheduler link once chosen.)*
+[Book now through Vagaro](https://www.vagaro.com/bluedoorcollective/book-now).
 
 Mobile visits available in Ann Arbor, Ypsilanti, Belleville, Saline, Milan, and Dexter — or communities at an equivalent distance.

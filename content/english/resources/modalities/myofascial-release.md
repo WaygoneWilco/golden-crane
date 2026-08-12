@@ -4,6 +4,8 @@ weight: 1
 draft: false
 ---
 
+Myofascial release is one of the approaches Aaron may incorporate into an [Integrative Massage](/services/). It is not booked as a separate service; each session is shaped around what your body needs that day.
+
 *"Fascia is 'the organ of form' — a continuous web that 'wraps, connects, and permeates every structure in the body. Myofascial release is the art of listening to this living fabric, coaxing it back from its patterns of tension and strain, allowing the body to remember its natural ease and fluidity.'"*
 Tom Myers, author of "Anatomy Trains: Myofascial Meridians for Manual and Movement Therapists"
 

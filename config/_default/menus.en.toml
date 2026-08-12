@@ -75,5 +75,5 @@ weight = 8
 
 [[footer]]
 name = "Book Now"
-url = "/contact/"
+url = "https://www.vagaro.com/bluedoorcollective/book-now"
 weight = 9

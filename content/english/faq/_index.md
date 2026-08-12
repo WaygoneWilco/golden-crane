@@ -1,7 +1,7 @@
 ---
 title: "Frequently Asked Questions"
 meta_title: "FAQ — Golden Crane Massage Therapy"
-description: "Common questions about booking, what to expect, mobile visits, and the modalities offered at Golden Crane."
+description: "Common questions about booking, what to expect, mobile visits, Integrative Massage, and Foot Reflexology at Golden Crane."
 draft: false
 ---
 
@@ -14,13 +14,13 @@ Then I'll step out so you can undress to your level of comfort and get under a s
 {{< /accordion >}}
 
 {{< accordion "What should I wear?" >}}
-For relaxation massage and myofascial release, most people undress to their underwear or fully — whatever you're comfortable with. You're always draped with a sheet, with only the area being worked on uncovered.
+For Integrative Massage, most people undress to their underwear or fully — whatever you're comfortable with. You're always draped with a sheet, with only the area being worked on uncovered. If we include clothed polarity-based work, loose, comfortable layers are ideal.
 
-For polarity therapy and foot reflexology, you stay fully clothed; loose, comfortable layers are ideal. (If reflexology is added on to a relaxation or myofascial session, you'll already be undressed under the sheet for the rest of the work — no need to dress in between.)
+For Foot Reflexology, you stay fully clothed; loose, comfortable layers are ideal. If reflexology is added on to an Integrative Massage session, you'll already be undressed under the sheet for the rest of the work — no need to dress in between.
 {{< /accordion >}}
 
-{{< accordion "What's the difference between the four modalities?" >}}
-**Relaxation massage** uses flowing, full-body strokes to settle the nervous system. **Myofascial release** uses slow, sustained pressure to soften connective tissue and unwind chronic patterns. **Polarity therapy** is gentle, clothed energy work that rebalances the body's natural flow. **Foot reflexology** focuses on the feet, where reflex points connect to the rest of the body. Most sessions blend two or more — we'll figure out the right mix together.
+{{< accordion "What's the difference between the two offerings?" >}}
+**Integrative Massage** is a tailored session that may combine broad, flowing massage, slow myofascial work, and gentle polarity-based energy work, depending on what your body needs that day. **Foot Reflexology** focuses on the feet, where reflex points connect to the rest of the body. It can be a standalone session or a beautiful add-on to Integrative Massage.
 {{< /accordion >}}
 
 {{< accordion "How do mobile visits work?" >}}

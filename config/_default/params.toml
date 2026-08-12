@@ -39,7 +39,7 @@ preloader = "" # use jpg, png, svg or gif format.
 [navigation_button]
 enable = true
 label = "Book Now"
-link = "/contact"  # TODO: replace with online scheduler URL when chosen
+link = "https://www.vagaro.com/bluedoorcollective/book-now"
 
 [llms]
 # Set to false to disable /llms.txt generation
@@ -75,8 +75,8 @@ content = ""
 # seo meta data for OpenGraph / Twitter Card
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
-keywords = ["massage therapy", "Ann Arbor", "myofascial release", "polarity therapy", "reflexology", "energy work", "LMT"]
-description = "Golden Crane Massage Therapy & Energy Work — relaxation massage, myofascial release, polarity therapy, and foot reflexology with Aaron Martz, LMT, in the Ann Arbor area."
+keywords = ["massage therapy", "integrative massage", "Ann Arbor", "myofascial release", "polarity therapy", "foot reflexology", "energy work", "LMT"]
+description = "Golden Crane Massage Therapy & Energy Work — Integrative Massage and Foot Reflexology with Aaron Martz, LMT, in the Ann Arbor area."
 author = "Aaron Martz, LMT"
 twitter = ""
 image = "images/og-image.png"

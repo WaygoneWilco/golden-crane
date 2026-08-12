@@ -5,8 +5,8 @@ image: "/images/crane.png"
 description: "Book a session at the Ann Arbor studio, or have Golden Crane come to you."
 button:
   enable: true
-  label: "Get in Touch"
-  link: "/contact/"
+  label: "Book a Session"
+  link: "https://www.vagaro.com/bluedoorcollective/book-now"
 
 # don't create a separate page
 build:
