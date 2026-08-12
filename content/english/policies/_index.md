@@ -29,12 +29,6 @@ If you're feeling unwell — even mildly — please reschedule. There's no fee f
 - Payment is due at the time of service.
 - *(TODO: confirm payment methods — e.g., Venmo, Zelle, HSA/FSA cards.)*
 
-## Mobile Visits
-
-- Available in Ann Arbor, Ypsilanti, Belleville, Saline, Milan, Dexter, and other communities at an equivalent distance.
-- I bring the table, sheets, and everything else needed; you provide a clear space about the size of a queen bed and a quiet hour.
-- For mobile visits, please confirm the appointment by reply the day before.
-
 ## Privacy
 
 Conversations during a session are confidential. Any health intake information you share is kept private and is not shared with anyone.

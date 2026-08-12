@@ -18,7 +18,7 @@ A tailored massage session that draws on broad, flowing strokes, focused myofasc
 | Length     | Studio |
 | ---------- | ------ |
 | 60 minutes | $110   |
-| 90 minutes | $165   |
+| 90 minutes | $160   |
 
 ---
 
@@ -29,14 +29,14 @@ Focused work on the feet using reflex points that correspond to the rest of the 
 | Length     | Studio |
 | ---------- | ------ |
 | 30 minutes | $65    |
-| 60 minutes | $105   |
+| 60 minutes | $115   |
 
 ---
 
 ## Add-Ons & Gift Certificates
 
 - **Reflexology add-on** — add 30 minutes of Foot Reflexology to an Integrative Massage for $45.
-- **Gift certificates** — [available for any service](/gift-certificates/).
+- **Gift certificates** — [available here](https://www.vagaro.com/bluedoorcollective/gift-certificates).
 
 ## Booking
 

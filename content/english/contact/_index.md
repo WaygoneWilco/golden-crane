@@ -8,8 +8,6 @@ draft: false
 
 Ready to book? Use the button below to choose a time through Vagaro.
 
-If you have questions about the work, the studio, or which offering might suit you best, you're welcome to email me at **[aaronmmartz@gmail.com](mailto:aaronmmartz@gmail.com)**. I'll reply within a day or two.
+If you have questions about the work, the studio, or which offering might suit you best, you're welcome to email me at **[aarongolendcrane@gmail.com](mailto:aarongoldencrane@gmail.com)**. I'll reply within a day or two.
 
-**Studio:** Ann Arbor, Michigan area. Address shared on booking.
-
-**Mobile visits:** Ann Arbor · Ypsilanti · Belleville · Saline · Milan · Dexter _(or communities at an equivalent distance)_
+**Studio:** Blue Door Collective - [1900 Packard Rd, Ypsilanti, MI 48197](https://duckduckgo.com/?q=1900+packard+rd+ypsilanti&t=newext&atb=v462-1&iaxm=maps&source=maps)
