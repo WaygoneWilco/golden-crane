@@ -29,7 +29,7 @@ Focused work on the feet using reflex points that correspond to the rest of the 
 | Length     | Studio |
 | ---------- | ------ |
 | 30 minutes | $65    |
-| 60 minutes | $115   |
+| 60 minutes | $110   |
 
 ---
 
